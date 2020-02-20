@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.game.PageTwo"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/textViewRulesPageTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/stringRulesPageTwo" />
+
+    <Button
+        android:id="@+id/buttonSubmitTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextUserGuessTwo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/stringSubmit" />
+
+    <TextView
+        android:id="@+id/textViewRightWrongTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewRulesPageTwo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:text="Guess:" />
+
+    <EditText
+        android:id="@+id/editTextUserGuessTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewRightWrongTwo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="@string/stringUserGuessHint"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/stringEnd" 
+        android:visibility="invisible" />
+
+</RelativeLayout>
+
